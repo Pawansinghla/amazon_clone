@@ -13,10 +13,11 @@ function App() {
         
         <Route path="/login"> <h1>Login</h1></Route>
         
-        <Route path="/"> <Header/>
-        <Home/><h1>HOME PAGE!!!</h1>
-        <h1>HOME PAGE!!!</h1>
-        <h1>HOME PAGE!!!</h1>
+        <Route path="/"> 
+        <Header/>
+        <Home/>
+        
+        
         </Route>
 
       </Switch>
