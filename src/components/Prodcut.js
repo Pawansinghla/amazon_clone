@@ -5,6 +5,8 @@ const Product=({id,title,price,image,rating})=>{
 
     return(
         <div className="product">
+        <div className="product_info"> 
+
             <p>{title}</p>
             <p className="product_price">
                 <small>$</small>
@@ -12,17 +14,15 @@ const Product=({id,title,price,image,rating})=>{
             </p>
             <div className="product_rating">
                 {
-                    Array(rating).fill().map((_)=>(
+                    Array(rating).fill().map(()=>(
                         <p>⭐</p>
-
-
-
                     ))
                 }
             </div>
-            <div>
-                <img src={image} alt=""/>
             </div>
+                <img src={image} alt=""/>
+                <button>Add to basket </button>
+            
 
         </div>
     )
