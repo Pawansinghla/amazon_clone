@@ -2,3 +2,8 @@
     width:100%;
     margin-bottom: 10px;
 }
+.checkout_title{
+    margin-right: 10;
+    padding:10px;
+    border-bottom: 1px solid lightgray;
+}
