@@ -2,13 +2,14 @@ import React from 'react';
 import {useStateValue} from '../StateProvider';
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct';
+import Subtotal from './Subtotal';
 
 function Checkout(){
     const[{basket}]=useStateValue();
     return (
         <div className="checkout">
             <div className="checkout_left">
-            <img className="checkout_ad" alt="" src="data:image/jpeg;base64,/9j/"/>
+            <img className="checkout_ad" alt="" src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"/>
             {basket.length===0?(
                 <div> 
                     <h2>Your shopping basket is empty</h2>
@@ -34,6 +35,9 @@ function Checkout(){
             )}
 
         </div>
+        <div className="checkout_right">
+        <Subtotal />
+      </div>
         </div>
     )
 }
